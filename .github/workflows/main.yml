@@ -42,4 +42,9 @@ jobs:
       - name: installing surge
         run: npm install -g surge
       - name: deploying on surge
-        run: surge ./build successful-cats.surge.sh/ --token ${{secrets.SURGE_TOKEN}}   
+        uses: dswistowski/surge-sh-action@v1
+        with:
+          domain: 'successful-cats.surge.sh'
+          project: ./build
+          token: ${{ secrets.surge_token }}
+             
