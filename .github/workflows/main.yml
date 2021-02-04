@@ -44,7 +44,7 @@ jobs:
       - name: deploying on surge
         uses: dswistowski/surge-sh-action@v1
         with:
-          domain: 'quirky-flight.surge.sh'
+          domain: 'literate-sidewalk.surge.sh'
           project: '.'
-          token: ${{ secrets.surge_token }}
+          token: ${{ secrets.SURGE_TOKEN }}
              
