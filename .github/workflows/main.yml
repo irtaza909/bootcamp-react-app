@@ -44,7 +44,7 @@ jobs:
       - name: deploying on surge
         uses: dswistowski/surge-sh-action@v1
         with:
-          domain: 'successful-cats.surge.sh'
-          project: ./build
+          domain: 'quirky-flight.surge.sh'
+          project: '.'
           token: ${{ secrets.surge_token }}
              
