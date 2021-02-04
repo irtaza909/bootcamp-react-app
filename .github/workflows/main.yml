@@ -42,4 +42,4 @@ jobs:
       - name: installing surge
         run: npm install -g surge
       - name: deploying on surge
-        run: surge ./build http://aggressive-brake.surge.sh/ --token ${{secrets.SURGE_TOKEN}}   
+        run: surge http://aggressive-brake.surge.sh/ --token ${{secrets.SURGE_TOKEN}}   
