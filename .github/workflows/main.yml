@@ -37,9 +37,9 @@ jobs:
         with:
           cmd: install 
       - name: creating build
-        run: yarn run 
+        run: yarn build 
       
       - name: installing surge
         run: npm install -g surge
       - name: deploying on surge
-        run: surge ./run http://literate-sidewalk.surge.sh/ --token ${{ secrets.SURGE_TOKEN}}    
+        run: surge ./build http://literate-sidewalk.surge.sh/ --token ${{ secrets.SURGE_TOKEN}}    
