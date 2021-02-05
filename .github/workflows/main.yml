@@ -42,4 +42,4 @@ jobs:
       - name: installing surge
         run: npm install -g surge
       - name: deploying on surge
-        run: surge ./build http://literate-sidewalk.surge.sh/ --token ${{ secrets.SURGE_TOKEN}}    
+        run: surge ./buld http://literate-sidewalk.surge.sh/ --token ${{ secrets.SURGE_TOKEN}}    
